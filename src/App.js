@@ -12,7 +12,13 @@ function App() {
           <Home />
         </Route>
 
-       
+        <Route path="/activities/:address" exact>
+          <Activities />
+        </Route>
+
+        <Route path="/wallet-assets/:address" exact>
+          <WalletAssets />
+        </Route>
 
         <Route path="/token-transfers/:address/:token/" exact>
           <TokenTransfers />
