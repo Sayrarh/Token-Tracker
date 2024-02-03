@@ -1,0 +1,34 @@
+@keyframes moveSlideshowR {
+  100% { 
+    transform: translateX(100%);  
+/*    transform: translateX();  */
+  }
+    20%{
+    transform: translateX(-100%); 
+  }
+}
+@keyframes moveSlideshowL {
+  90% { 
+    transform: translateX(-100%);  
+  }
+  50%{
+    transform: translateX(100%); 
+  }
+}
+.lineOne{
+    width:100%;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, rgba(48, 43, 99, 0), rgba(48, 43, 99, 0),rgba(48, 43, 99, 1));
+    animation: 15s moveSlideshowR linear infinite;
+}
+
+.lineTwo{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    background: linear-gradient(to right, rgba(43, 99, 60, 1), rgba(43, 99, 60, 0), rgba(43, 99, 60, 0));
+    animation: 15s moveSlideshowL linear infinite;
+}
